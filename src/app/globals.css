@@ -6,4 +6,17 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero:after {
+  position: absolute;
+  display: block;
+  content: " ";
+  z-index: 2;
+  top: 0;
+  border: 0;
+  left: 0;
+  right: 0;
 }
