@@ -69,7 +69,7 @@ export default function Home() {
                   className="basis-full md:hidden block"
                 />
               </div>
-              <div className="absolute inset-0 bg-black group-hover:bg-white bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300"></div>
+              <div className="absolute inset-0 bg-gradient-to-t group-hover:from-[rgba(0,0,0,0)] from-[rgba(0,0,0,0.6)] to-[rgba(0,0,0,0%)] group-hover:bg-white bg-opacity-30 group-hover:bg-opacity-50 transition-all duration-300"></div>
               <h3 className={`${jose.className} max-w-[250px] uppercase text-[33px] p-[30px] md:p-[43px] leading-[33px] absolute bottom-0 text-white group-hover:text-black md:group-hover:pb-[80px] group-hover:pb-[45px] transition-all duration-300`}>{images.title}</h3>
             </div>
           ))
