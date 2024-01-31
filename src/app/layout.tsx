@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { alata } from "@/app/font"
 import "./globals.css";
+import Footer from "@/components/Footer"
+import { PProvider } from "@/lib/Provider";
+import Sidebar from "@/components/Sidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,8 +16,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${alata.className} text-[15px]`}>{children}</body>
-    </html>
+    <PProvider>
+      <html lang="en">
+        <body className={`${alata.className} text-[15px] relative`}>
+          <Sidebar />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </PProvider>
   );
 }
